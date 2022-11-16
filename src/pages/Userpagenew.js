@@ -26,13 +26,21 @@ import StatsTab from "../components/StatsTab";
 import TournamentTab from "../components/TournamentTab";
 import LeaderBoardTab from "../components/LeaderBoardTab";
 import NewMatchTab from "../components/NewMatchTab";
+import Events from "../components/Events";
+import SponserTab from "../components/SponserTab";
 
 class Userpage extends Component {
   constructor() {
     super();
-    this.state = { tabes: 1 };
+    this.state = { tabes: 1, drop: 1, Listing: 0 };
   }
   showTebs = (id) => {
+    this.setState({ tabes: id });
+  };
+  showdrop = (id) => {
+    this.setState({ drop: id });
+  };
+  showListing = (id) => {
     this.setState({ tabes: id });
   };
   render() {
@@ -54,6 +62,9 @@ class Userpage extends Component {
                   <ProfilecardThreeNew
                     active={this.state.tabes}
                     tabes={this.showTebs}
+                    drop={this.state.drop}
+                    showdrop={this.showdrop}
+                    showListing={this.showListing}
                   />
                 </div>
               </div>
@@ -77,7 +88,7 @@ class Userpage extends Component {
               ) : this.state.tabes == 2 ? (
                 <FriendsTab />
               ) : this.state.tabes == 3 ? (
-                <MatchesTab />
+                <MatchesTab drop={this.state.drop} showdrop={this.showdrop} />
               ) : this.state.tabes == 4 ? (
                 <TeamsTab />
               ) : this.state.tabes == 5 ? (
@@ -100,6 +111,18 @@ class Userpage extends Component {
                 <ClubTab />
               ) : this.state.tabes == 15 ? (
                 <NewMatchTab />
+              ) : this.state.tabes == 21 ? (
+                <ListingTab />
+              ) : this.state.tabes == 22 ? (
+                <FundraiserTab />
+              ) : this.state.tabes == 23 ? (
+                <JobTab />
+              ) : this.state.tabes == 24 ? (
+                <SponserTab />
+              ) : this.state.tabes == 25 ? (
+                <CoachTab />
+              ) : this.state.tabes == 26 ? (
+                <ClubTab />
               ) : null}
               {/* <FriendsTab /> */}
               {/* <PhotosTab /> */}

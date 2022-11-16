@@ -1,6 +1,6 @@
 import Dropdown from "react-bootstrap/Dropdown";
 
-function ListDropdown() {
+function ListDropdown(props) {
   return (
     <Dropdown>
       <Dropdown.Toggle
@@ -12,22 +12,22 @@ function ListDropdown() {
       </Dropdown.Toggle>
 
       <Dropdown.Menu className="">
-        <Dropdown.Item href="#/action-1" className="fs-5">
+        <Dropdown.Item onClick={() => props.showListing(21)} className="fs-5">
           Events
         </Dropdown.Item>
-        <Dropdown.Item href="#/action-2" className="fs-5">
+        <Dropdown.Item onClick={() => props.showListing(22)} className="fs-5">
           Fundraiser
         </Dropdown.Item>
-        <Dropdown.Item href="#/action-3" className="fs-5">
+        <Dropdown.Item onClick={() => props.showListing(23)} className="fs-5">
           Job
         </Dropdown.Item>
-        <Dropdown.Item href="#/action-4" className="fs-5">
+        <Dropdown.Item onClick={() => props.showListing(24)} className="fs-5">
           Sponsers
         </Dropdown.Item>
-        <Dropdown.Item href="#/action-5" className="fs-5">
+        <Dropdown.Item onClick={() => props.showListing(25)} className="fs-5">
           Tennis Coach
         </Dropdown.Item>
-        <Dropdown.Item href="#/action-6" className="fs-5">
+        <Dropdown.Item onClick={() => props.showListing(26)} className="fs-5">
           Tennis Club
         </Dropdown.Item>
       </Dropdown.Menu>

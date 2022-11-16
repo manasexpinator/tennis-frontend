@@ -1,6 +1,7 @@
 import Dropdown from "react-bootstrap/Dropdown";
 
-function MatchDropdown() {
+function MatchDropdown(props) {
+  console.log("object", props);
   return (
     <Dropdown>
       <Dropdown.Toggle
@@ -12,7 +13,7 @@ function MatchDropdown() {
       </Dropdown.Toggle>
 
       <Dropdown.Menu className="">
-        <Dropdown.Item href="#/action-1" className="fs-5">
+        <Dropdown.Item onClick={() => props.showdrop()} className="fs-5">
           My Stats
         </Dropdown.Item>
         <Dropdown.Item href="#/action-2" className="fs-5">

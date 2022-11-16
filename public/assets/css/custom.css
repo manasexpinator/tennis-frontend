@@ -526,6 +526,15 @@ body.theme-dark .nav-caption span {
   max-width: 1180px;
 }
 
+
+.theme-dark .menu-icon img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.theme-dark span#dropdownMenu4 img {
+  filter: none;
+}
+
 @media (max-width:767px){
   .lft-part .w-50 {
     width: 100%!important;

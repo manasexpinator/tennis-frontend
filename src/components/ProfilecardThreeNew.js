@@ -190,6 +190,18 @@ class ProfilecardThree extends Component {
               </a>
             </li>
             <li className="list-inline-item me-5">
+              <a
+                onClick={() => this.props.tabes(3)}
+                className={
+                  this.props.active == 2
+                    ? " fw-700 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block active"
+                    : " fw-700 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block "
+                }
+                href="#navtabs2"
+                data-toggle="tab"
+              >
+                Match
+              </a>
               {/* <a
                 onClick={() => this.props.tabes(3)}
                 className={
@@ -202,7 +214,10 @@ class ProfilecardThree extends Component {
               >
                 Matches
               </a> */}
-              <MatchDropdown />
+              {/* <MatchDropdown
+                showdrop={this.props.showdrop}
+                drop={this.props.drop}
+              /> */}
             </li>
             <li className="list-inline-item me-5">
               <a
@@ -275,84 +290,7 @@ class ProfilecardThree extends Component {
               </a>
             </li>
 
-            <ListDropdown />
-            {/* <li className="list-inline-item">
-              <a
-                onClick={() => this.props.tabes(9)}
-                className={
-                  this.props.active == 9
-                    ? " fw-700 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block active"
-                    : " fw-700 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block "
-                }
-                href="#navtabs1"
-                data-toggle="tab"
-              >
-                Listing
-              </a>
-            </li> */}
-
-            <li className="list-inline-item">
-              <a
-                onClick={() => this.props.tabes(15)}
-                className={
-                  this.props.active == 15
-                    ? " fw-700 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block active"
-                    : " fw-700 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block "
-                }
-                href="#navtabs1"
-                data-toggle="tab"
-              >
-                My Stats
-              </a>
-            </li>
-
-            {/* <li className="list-inline-item">
-              <a
-                onClick={() => this.props.tabes(12)}
-                className={
-                  this.props.active == 10
-                    ? " fw-700 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block active"
-                    : " fw-700 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block "
-                }
-                href="#navtabs1"
-                data-toggle="tab"
-              >
-                Job
-              </a>
-            </li> */}
-
-            {/* <li className="list-inline-item me-4">
-              <a
-                className="fw-700 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block"
-                href="#navtabs7"
-                data-toggle="tab"
-              >
-                Fundraisers
-              </a>
-            </li>
-            <li className="list-inline-item me-4">
-              <a
-                onClick={() => this.props.tabes(11)}
-                className={
-                  this.props.active == 11
-                    ? " fw-700 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block active"
-                    : " fw-700 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block "
-                }
-                href="#navtabs7"
-                data-toggle="tab"
-              >
-                Documents
-              </a>
-            </li>
-            <li className="list-inline-item me-4">
-              <a
-                className="fw-700 me-sm-5 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block"
-                href="#navtabs7"
-                data-toggle="tab"
-              >
-                Edit Tabs
-              </a>
-            </li> */}
+            <ListDropdown showListing={this.props.showListing} />
           </ul>
         </div>
       </div>
