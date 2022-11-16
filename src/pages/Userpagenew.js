@@ -21,6 +21,11 @@ import ListingTab from "../components/ListingTab";
 import FundraiserTab from "../components/FundraiserTab";
 import JobTab from "../components/JobTab";
 import CoachTab from "../components/CoachTab";
+import ClubTab from "../components/ClubTab";
+import StatsTab from "../components/StatsTab";
+import TournamentTab from "../components/TournamentTab";
+import LeaderBoardTab from "../components/LeaderBoardTab";
+import NewMatchTab from "../components/NewMatchTab";
 
 class Userpage extends Component {
   constructor() {
@@ -92,7 +97,9 @@ class Userpage extends Component {
               ) : this.state.tabes == 12 ? (
                 <JobTab />
               ) : this.state.tabes == 14 ? (
-                <CoachTab />
+                <ClubTab />
+              ) : this.state.tabes == 15 ? (
+                <NewMatchTab />
               ) : null}
               {/* <FriendsTab /> */}
               {/* <PhotosTab /> */}

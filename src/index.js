@@ -45,6 +45,8 @@ import Userpagenew from "./pages/Userpagenew";
 import Authorpage from "./pages/Authorpage";
 import Hotelsingle from "./pages/Hotelsingle";
 import Analytics from "./pages/Analytics";
+import Clublisting from "./pages/Clublisting";
+import Coachlisting from "./pages/Coachlisting";
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
@@ -274,6 +276,18 @@ class Root extends Component {
             exact
             path={`${process.env.PUBLIC_URL}/defaulthoteldetails`}
             component={Hotelsingle}
+          />
+
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/clublisting`}
+            component={Clublisting}
+          />
+
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL}/coachlisting`}
+            component={Coachlisting}
           />
         </Switch>
       </BrowserRouter>

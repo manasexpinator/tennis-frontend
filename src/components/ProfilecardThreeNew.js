@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ListDropdown from "../components/ListDropdown";
 import FundraiserTab from "../components/FundraiserTab";
+import MatchDropdown from "../components/MatchDropdown";
 
 class ProfilecardThree extends Component {
   constructor(props) {
@@ -156,7 +157,7 @@ class ProfilecardThree extends Component {
 
         <div className="card-body d-block w-100 shadow-none mb-0 p-0 border-top-xs">
           <ul
-            className="nav nav-tabs h55 d-flex flex-nowrap product-info-tab  ps-4 border mb-4 overflow-auto"
+            className="nav nav-tabs h55 d-flex flex-nowrap product-info-tab  ps-4 border mb-4"
             id="pills-tab"
             role="tablist"
           >
@@ -189,7 +190,7 @@ class ProfilecardThree extends Component {
               </a>
             </li>
             <li className="list-inline-item me-5">
-              <a
+              {/* <a
                 onClick={() => this.props.tabes(3)}
                 className={
                   this.props.active == 3
@@ -200,7 +201,8 @@ class ProfilecardThree extends Component {
                 data-toggle="tab"
               >
                 Matches
-              </a>
+              </a> */}
+              <MatchDropdown />
             </li>
             <li className="list-inline-item me-5">
               <a
@@ -272,7 +274,9 @@ class ProfilecardThree extends Component {
                 Media
               </a>
             </li>
-            <li className="list-inline-item">
+
+            <ListDropdown />
+            {/* <li className="list-inline-item">
               <a
                 onClick={() => this.props.tabes(9)}
                 className={
@@ -285,20 +289,20 @@ class ProfilecardThree extends Component {
               >
                 Listing
               </a>
-            </li>
+            </li> */}
 
             <li className="list-inline-item">
               <a
-                onClick={() => this.props.tabes(14)}
+                onClick={() => this.props.tabes(15)}
                 className={
-                  this.props.active == 13
+                  this.props.active == 15
                     ? " fw-700 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block active"
                     : " fw-700 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block "
                 }
                 href="#navtabs1"
                 data-toggle="tab"
               >
-                CoachTab
+                My Stats
               </a>
             </li>
 
@@ -316,7 +320,7 @@ class ProfilecardThree extends Component {
                 Job
               </a>
             </li> */}
-            {/* <ListDropdown /> */}
+
             {/* <li className="list-inline-item me-4">
               <a
                 className="fw-700 font-xssss text-grey-500 pt-3 pb-3 ls-1 d-inline-block"
