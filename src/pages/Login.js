@@ -1,11 +1,12 @@
 import React, { Component, Fragment } from "react";
+import { Button } from "react-bootstrap";
 
 class Login extends Component {
   render() {
     return (
       <Fragment>
         <div className="main-wrap">
-          <div className="nav-header bg-transparent shadow-none border-0">
+          {/* <div className="nav-header bg-transparent shadow-none border-0">
             <div className="nav-top w-100">
               <a href="/">
                 <i className="feather-zap text-success display1-size me-2 ms-0"></i>
@@ -28,73 +29,73 @@ class Login extends Component {
                 Register
               </a>
             </div>
-          </div>
+          </div> */}
           <div className="row">
-            <div
-              className="col-xl-5 d-none d-xl-block p-0 vh-100 bg-image-cover bg-no-repeat"
-              style={{
-                backgroundImage: `url("https://via.placeholder.com/800x950.png")`,
-              }}
-            ></div>
-            <div className="col-xl-7 vh-100 align-items-center d-flex bg-white rounded-3 overflow-hidden">
+            <div className="col-xl-6 d-flex align-items-center justify-content-center p-3 vh-100 bg-image-cover bg-no-repeat log-bg">
+              <div className="">
+                <h1 className="fw-bold  text-white text-center mb-3 tennis-head">
+                  Social Media for tennis
+                  <br /> players, clubs and coaches
+                  <br />
+                </h1>
+                <p className="fs-6 fw-light text-white text-center  mx-auto lh-4">
+                  Connect with players near you. Join groups and record match
+                  results.
+                  <br /> Explore the latest video tips and content. Create
+                  tournament brackets
+                  <br /> & manage teams. Shop online or take a course to improve
+                  your game.
+                </p>
+              </div>
+            </div>
+            <div className="col-xl-6 vh-100 align-items-center d-flex bg-white rounded-3 overflow-hidden">
               <div className="card shadow-none border-0 ms-auto me-auto login-card">
                 <div className="card-body rounded-0 text-left">
-                  <h2 className="fw-700 display1-size display2-md-size mb-3">
-                    Login into <br />
-                    your account
-                  </h2>
+                  <img
+                    className="mb-5 w-100"
+                    src="assets/images/login-logo.png"
+                  />
+                  <div className="d-flex mb-4">
+                    <h2 className="fw-700  display2-md-size">Sign in</h2>
+                    <p className="fs-6 ms-auto mb-0 text-black">
+                      Or Create an Account
+                    </p>
+                  </div>
                   <form>
                     <div className="form-group icon-input mb-3">
-                      <i className="font-sm ti-email text-grey-500 pe-0"></i>
+                      <label className="text-black fs-6">Email</label>
                       <input
                         type="text"
-                        className="style2-input ps-5 form-control text-grey-900 font-xsss fw-600"
-                        placeholder="Your Email Address"
+                        className="style2-input  form-control text-grey-900 font-xsss fw-600"
                       />
                     </div>
-                    <div className="form-group icon-input mb-1">
+
+                    <div className="form-group icon-input mb-3">
+                      <label className="text-black fs-6">Password</label>
                       <input
                         type="Password"
-                        className="style2-input ps-5 form-control text-grey-900 font-xss ls-3"
-                        placeholder="Password"
+                        className="style2-input  form-control text-grey-900 font-xss ls-3"
                       />
-                      <i className="font-sm ti-lock text-grey-500 pe-0"></i>
                     </div>
-                    <div className="form-check text-left mb-3">
-                      <input
-                        type="checkbox"
-                        className="form-check-input mt-2"
-                        id="exampleCheck5"
-                      />
-                      <label className="form-check-label font-xsss text-grey-500">
-                        Remember me
-                      </label>
-                      <a
-                        href="/forgot"
-                        className="fw-600 font-xsss text-grey-700 mt-1 float-right"
-                      >
-                        Forgot your Password?
-                      </a>
+                    <div className="d-flex align-items-center">
+                      <p className="d-flex align-items-center mb-0 fs-6">
+                        <input type="checkbox" className="me-2"></input>Remember
+                        Me
+                      </p>
+
+                      <p className="d-flex align-items-center mb-0 fs-6 ms-auto">
+                        Forgot Password?
+                      </p>
                     </div>
+                    <Button
+                      variant="primary"
+                      className="text-white w-100 py-3 fs-4 mt-5"
+                    >
+                      Log In
+                    </Button>
                   </form>
 
-                  <div className="col-sm-12 p-0 text-left">
-                    <div className="form-group mb-1">
-                      <a
-                        href="/login"
-                        className="form-control text-center style2-input text-white fw-600 bg-dark border-0 p-0 "
-                      >
-                        Login
-                      </a>
-                    </div>
-                    <h6 className="text-grey-500 font-xsss fw-500 mt-0 mb-0 lh-32">
-                      Dont have account{" "}
-                      <a href="/register" className="fw-700 ms-1">
-                        Register
-                      </a>
-                    </h6>
-                  </div>
-                  <div className="col-sm-12 p-0 text-center mt-2">
+                  {/* <div className="col-sm-12 p-0 text-center mt-2">
                     <h6 className="mb-0 d-inline-block bg-white fw-500 font-xsss text-grey-500 mb-3">
                       Or, Sign in with your social account{" "}
                     </h6>
@@ -124,7 +125,7 @@ class Login extends Component {
                         Sign in with Facebook
                       </a>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

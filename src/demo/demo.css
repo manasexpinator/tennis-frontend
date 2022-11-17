@@ -120,6 +120,6 @@ p {line-height: 30px;  }
 	.banner-wrapper { background-position: top left 23% !important;  }
 	.list-inline li:last-child {margin-top: 10px; }
 	.col-xs-6 {width: 50%;}
-	.vh-100 {height: auto; padding-top: 100px; padding-bottom: 100px; }
+	.vh-100 {height: auto!important; }
 	.banner-content {position: relative; top:0;     -webkit-transform: translateY(0%);-moz-transform: translateY(0%);-ms-transform: translateY(0%);-o-transform: translateY(0%);transform: translateY(0%);}
 }

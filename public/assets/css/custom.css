@@ -211,9 +211,7 @@
   border-top-right-radius: 5px;
 }
 
-.progress {
-  height: 5px;
-}
+
 
 .center-text-part {
   border: 1px solid #cccccc6e;
@@ -535,6 +533,41 @@ body.theme-dark .nav-caption span {
   filter: none;
 }
 
+
+.log-bg{
+  background-image: url(../images/reg_bg.png);
+}
+
+.login-card {
+  max-width: 100%;
+  min-width:auto;
+}
+
+.login-card .btn-primary {
+  background-color: #1E42DD;
+  border-radius: 20px;
+  letter-spacing: 0;
+}
+
+
+.tennis-head {
+  font-size: 28px;
+}
+
+
+.progress {
+  height: 4px;
+  border-radius: 0px;
+}
+
+.progress-bar {
+  background-color: #ff703d;
+}
+
+
+
+
+
 @media (max-width:767px){
   .lft-part .w-50 {
     width: 100%!important;
@@ -544,4 +577,19 @@ body.theme-dark .nav-caption span {
 .lft-part {
   display: block!important;
 }
+
+.tennis-head {
+  font-size: 20px;
+}
+
+.display2-md-size {
+  font-size: 18px !important;
+}
+
+
+.log-bg p br {
+  display: none;
+}
+
+
 }
